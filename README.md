@@ -18,10 +18,10 @@ sha= {last commit sha of branch}
 ```
 For not existing github user, response is:
 ```
-{"code":404,"message":"User {user} not exist"}
+{"code":404,"message":"Not Found"}
 ```
-For bigger rate limit token authentication implemented:
-to authenticate, replace token variable in controller.GitHubHeader file.
+For bigger rate limit token authentication implemented. To authenticate, add optional parameter to endpoint:
+> http://localhost:8080/api/{user}?token={your_token}
 
 ## Run Spring Boot application
 ```
